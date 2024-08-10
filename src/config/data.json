@@ -15,8 +15,7 @@
   "skillList": [
     {
       "skillDesc": [
-        "Web前端：熟悉 Vue2/3 及整体工具链，给 Vue 及相关生态提过一些 Issue 和 PR。有使用 React 的经验。喜好使用业界最新技术。有主导技术选型及构建开发脚手架的经验。",
-        "Web后端：熟悉 Springboot，也可用 Python 或 Golang 开发。可全栈独立开发 Web 项目。",
+        "Web开发：熟悉 Vue2/3 及整体工具链，给 Vue 及相关生态提过一些 Issue 和 PR。有使用 React 的经验。喜好使用业界最新技术。有主导技术选型及构建开发脚手架的经验。熟悉 Springboot，也可用 Python 或 Golang 开发。可全栈独立开发 Web 项目。",
         "DevOps相关：日常使用 kubernetes，搭建过多个小型 Kubernetes 集群。有搭建使用全流程 DevOps 相关基建的经验。涉及：监控报警、消息通知、日志收集、CICD等。",
         "操作系统：熟悉 Linux 环境的操作，熟悉环境配置与依赖问题的解决，拥有多个不同 Linux 版本的使用经验，包括 Ubuntu、CentOS 等操作系统及 Proxmox 虚拟化平台的经验。"
       ]
@@ -48,17 +47,6 @@
         "制定团队规范，如前端与后端的规范，技术栈、接口、文件名等规范。",
         "负责团队日常 Code Review，探索、分享新技术，并在项目中落地。"
       ]
-    },
-    {
-      "company": "建邦专猎咨询有限公司",
-      "apartment": "技术部",
-      "position": "大二暑期实习",
-      "workDate": "2019.07 - 2019.10",
-      "workDesc": [
-        "参与公司论坛、学习网等项目开发，使用了 Node 中间层，服务端渲染等技术。并负责运维，包括为项目编写 Dockerfile，配置 Jenkins 自动部署， SSL 证书并上线以及后续的运维等。",
-        "为公司搭建基础 Ops 服务，如 Jenkins，内网 VPN，项目管理平台等。",
-        "搭建了基于阿里云的监控报警平台，负责服务与应用的日常维护。"
-      ]
     }
   ],
   "projectList": [
@@ -85,6 +73,17 @@
         "参与开发维护官方 sandbox 镜像、agentskill 插件，包括插件集成、镜像裁剪等",
         "使用 React，参与部分前端开发",
         "[项目地址: https://github.com/OpenDevin/OpenDevin](https://github.com/OpenDevin/OpenDevin)"
+      ]
+    },
+    {
+      "project": "投研平台 (业余项目，处于初期开发中)",
+      "projectKeywords": [],
+      "projectBrief": "和朋友共建，方便交易员获取数据，寻找因子，易于回测",
+      "projectDesc": [
+        "搭建定时任务框架，使用定时任务获取各不同数据源行情数据、基本面信息",
+        "使用 Clickhouse 存储百亿级数据",
+        "编写 Python SDK，从 Clickhouse 根据不同条件获取数据并输出为 Dataframe",
+        "使用 nfs + autofs 解决多机共享数据源的问题"
       ]
     },
     {
