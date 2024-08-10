@@ -1,10 +1,10 @@
 {
   "info": {
-    "name": "周航",
-    "position": "前端开发工程师",
+    "name": "郑明樟",
+    "position": "全栈开发工程师",
     "location": "上海",
-    "gender": "女",
-    "age": "24 岁"
+    "gender": "男",
+    "age": "25 岁"
   },
   "items": {
     "skill": "个人技能",
@@ -15,11 +15,10 @@
   "skillList": [
     {
       "skillDesc": [
-        "熟练开发基于 React + Mobx + TypeScript 的应用",
-        "熟练使用 Vue3 + Vite 进行开发",
-        "熟悉 JavaScript 函数式编程 ，项目中熟练使用 ES6+ 特性",
-        "熟悉 Linux 环境基本操作；对 Docker 等虚拟化工具有使用经验；熟悉 DevOps 工作流",
-        "有后端开发经验，可全栈独立完成小型 Web 项目"
+        "Web前端：熟悉 Vue2/3 及整体工具链，给 Vue 及相关生态提过一些 Issue 和 PR。有使用 React 的经验。喜好使用业界最新技术。有主导技术选型及构建开发脚手架的经验。",
+        "Web后端：熟悉 Springboot，也可用 Python 或 Golang 开发。可全栈独立开发 Web 项目。",
+        "DevOps相关：日常使用 kubernetes，搭建过多个小型 Kubernetes 集群。有搭建使用全流程 DevOps 相关基建的经验。涉及：监控报警、消息通知、日志收集、CICD等。",
+        "操作系统：熟悉 Linux 环境的操作，熟悉环境配置与依赖问题的解决，拥有多个不同 Linux 版本的使用经验，包括 Ubuntu、CentOS 等操作系统及 Proxmox 虚拟化平台的经验。"
       ]
     }
   ],
@@ -27,82 +26,99 @@
     {
       "university": "重庆邮电大学",
       "degree": "本科",
-      "major": "市场营销",
-      "eduDate": "2018 - 2022",
+      "major": "自动化",
+      "eduDate": "2017 - 2021",
       "eduDesc": ""
     }
   ],
   "contact": {
-    "tel": "17623389616",
-    "wechat": "ZhouHang73",
-    "email": "alazhouhang@qq.com",
-    "github": "09473ZH"
+    "tel": "18033988161",
+    "wechat": "kiduacu",
+    "email": "649940882@qq.com",
+    "github": "Shimada666"
   },
   "workList": [
     {
-      "company": "七牛信息技术有限公司",
-      "apartment": "前端开发与体验部",
-      "position": "实习&全职",
-      "workDate": "2021.07 - 2023.07",
+      "company": "美团点评",
+      "apartment": "服务运维部",
+      "position": "大三实习&全职",
+      "workDate": "2020.04 - 至今",
       "workDesc": [
-        "负责维护和开发 CDN 业务相关平台；参与官网开发",
-        "参与以 Umi.js 为基础的 UI 组件库开发",
-        "与后端团队紧密合作，参与设计并完成了符合规范的接口对接；在与设计和产品部门的协作中，保持良好沟通，确保项目进展顺利",
-        "负责团队日常 Code Review",
-        "探索、分享新技术，并在项目中落地"
+        "实习入职以来从零搭建 Rocket 主机管理系统，作为项目负责人，负责项目几乎全部的目标制定、日常开发、进度管理和跨部门协调沟通。",
+        "制定团队规范，如前端与后端的规范，技术栈、接口、文件名等规范。",
+        "负责团队日常 Code Review，探索、分享新技术，并在项目中落地。"
+      ]
+    },
+    {
+      "company": "建邦专猎咨询有限公司",
+      "apartment": "技术部",
+      "position": "大二暑期实习",
+      "workDate": "2019.07 - 2019.10",
+      "workDesc": [
+        "参与公司论坛、学习网等项目开发，使用了 Node 中间层，服务端渲染等技术。并负责运维，包括为项目编写 Dockerfile，配置 Jenkins 自动部署， SSL 证书并上线以及后续的运维等。",
+        "为公司搭建基础 Ops 服务，如 Jenkins，内网 VPN，项目管理平台等。",
+        "搭建了基于阿里云的监控报警平台，负责服务与应用的日常维护。"
       ]
     }
   ],
   "projectList": [
     {
-      "project": "CDNBOSS 内部管理平台",
+      "project": "Rocket 主机管理平台 (公司项目)",
       "projectKeywords": [],
-      "projectBrief": "该项目主要帮助运维人员进行线路、节点以及包相关的管理；项目采用 <strong>Vue2</strong> 进行开发",
+      "projectBrief": "平台基于 ansible 魔改，负责美团百万级主机运行时变更，包括机器初始化、软件管理、脚本管理、agent 管理、包管理等功能。此外也是美团唯一配置管理平台，联动基础与业务镜像，正在朝不可变基础设施目标演进。",
       "projectDesc": [
-        "项目负责人；负责项目的日常开发、进度管理和跨部门协调沟通",
-        "设计封装多个自定义组件，简化页面通信，提高代码重用性",
-        "引入组合式 API 写法，对部分页面进行了重构，解决了老旧代码维护不足的历史遗留问题，并成功推广了新技术在团队中的应用"
+        "软件管理：基于魔改 ansible 实现，采用本地执行方式，开发了一套白屏化操作界面，带有版本管理、目标绑定、灰度发布、结果分析等功能，通过底层 one-agent 执行器进行运行时变更。发布功能对标 kubernetes，支持按比例发布及业务内部打散功能，保证发布安全性。另外，软件管理除了页面，也提供丰富的 API，作为底层执行平台供外部业务方调用实现定制功能。",
+        "脚本管理：软件管理的浅包装，提供方便的单次脚本变更/采集数据功能，对于采集数据，支持定时自动采集、自动数据聚合筛选分析。",
+        "agent管理：软件管理的浅包装，除了软件管理基础能力，额外提供各 agent 部署、按业务线运行时自动升级、版本分布采集、生命周期管理等功能。",
+        "包管理：提供 RPM 包管理能力，包含公司各个 RPM 仓库，串联代码平台与构建平台，保证 RPM 包可溯源，入仓时可审计，平台对包提供入仓、归档、删除等功能，提供包元数据供在线查询。",
+        "镜像联动：配置可与基础/业务镜像联动。通过提供给基础镜像方的客户端工具，可将基础配置自动构入基础镜像，将通用配置运行时安装左移至镜像构建中，减少初始化时间与成功率(66s->1s)。通过提供给构建平台的客户端工具，可将配置作为运行时依赖构入业务镜像中以供业务使用，避免业务运行时再安装影响启动速度。",
+        "涉及到的技术栈：前端 vue2/3 + vite + ts；后端 springboot；客户端 golang；一些日常脚本：shell/python。"
       ]
     },
     {
-      "project": "FUSION ADMIN 内部管理平台",
+      "project": "OpenDevin (开源项目, 28.7K 22stars)",
       "projectKeywords": [],
-      "projectBrief": "该项目旨在支持技术支持和运营人员处理 CDN 相关的业务，包括日志分析、域名管理和供应商管理等",
+      "projectBrief": "OpenDevin 是开源社区发起的模仿 Devin 的项目。是一位自主人工智能软件工程师，能够执行复杂的工程任务，并在软件开发项目上与用户积极协作",
       "projectDesc": [
-        "采用了 <strong>Angular + Vue2（旧版）、React（新版）</strong>进行开发",
-        "独立负责新版页面开发，使用 React16 + Mobx + TypeScript 进行函数式组件开发",
-        "使用 Promise 进行接口批量请求，并对后端提供的复杂数据进行整合，确保符合前端数据需求；利用基于<strong> Highcharts </strong>的封装图表库进行数据可视化",
-        "使用 Angular + CoffeeScript 负责旧版 CRUD 功能开发；参与重构旧版页面，统一技术栈，以提高代码可维护性和可读性"
+        "提过 31 个 commit, #14 贡献者，在 Slack 上活跃，能够使用英文参与讨论",
+        "实现基于自定义基础镜像的 sandbox 逻辑，让 opendevin 可以运行在任意用户自定义基础镜像",
+        "参与开发维护官方 sandbox 镜像、agentskill 插件，包括插件集成、镜像裁剪等",
+        "使用 React，参与部分前端开发",
+        "[项目地址: https://github.com/OpenDevin/OpenDevin](https://github.com/OpenDevin/OpenDevin)"
       ]
     },
     {
-      "project": "PORTAL FUSION 控制台",
+      "project": "v-code-diff (开源项目, 359 stars)",
       "projectKeywords": [],
-      "projectBrief": "该项目主要为开发者提供 CDN 的域名管理、告警配置和日志分析等服务",
+      "projectBrief": "一个 Vue2 / Vue3 均可用的 code diff 插件",
       "projectDesc": [
-        "使用<strong> React17 + Mobx + TypeScript </strong>开发",
-        "独立负责重构告警配置，将卡片式列表改为功能性表格，实现批量删除、监控指标配置等功能",
-        "独立负责开发应用管理模块，处理域名配置等日常开发需求",
-        "参与 OEM 开发，处理定制化需求"
+        "一个版本同时支持 Vue2 / Vue3",
+        "各种不同级别的 diff 方式，如单词级对比，字符级对比，支持展开折叠",
+        "良好的渲染、语法高亮的性能及准确率",
+        "较小的打包体积，默认仅包含核心库",
+        "丰富且简单易用的 API",
+        "较美观的样式，支持暗黑模式",
+        "[在线演示地址: https://shimada666.github.io/v-code-diff](https://shimada666.github.io/v-code-diff)"
       ]
     },
     {
-      "project": "七牛官网",
+      "project": "super-stream (开源项目, 33 stars)",
       "projectKeywords": [],
+      "projectBrief": "开源项目，一个 Python 轻量级类 Java Stream 的流式处理库",
       "projectDesc": [
-        "使用<strong> Next.js </strong>开发",
-        "负责 Nav 的站内信改版、文档优化以及日常维护"
+        "处理数据时比起内置 map、filter 等高阶函数套娃更好的可读性",
+        "惰性求值（无论中途map，filter多少次，数据最终只计算一次）",
+        "完善的类型提示，即使使用 lambda 也能获取良好的类型提示",
+        "[项目地址: https://github.com/shimada666/super-stream](https://github.com/shimada666/super-stream)"
       ]
     },
     {
-      "project": "v-code-diff",
+      "project": "校内服务运维",
       "projectKeywords": [],
-      "projectBrief": "开源项目，GitHub stars 313",
+      "projectBrief": "大学在校期间负责校内项目的运维开发工作。",
       "projectDesc": [
-        "一个 Vue 代码对比插件，Vue2/3 通用，支持大文件对比、折叠展开、暗色模式等特性",
-        "项目的主要协作者，负责 issue 处理，支持新特性以及性能优化（tree-shaking）",
-        "demo 页的维护者，支持了页面优化、i18n",
-        "[在线演示地址](https://shimada666.github.io/v-code-diff): https://shimada666.github.io/v-code-diff"
+        "负责重庆邮电大学内网下载站 ， 电影站等。运维期间状态良好 ， 服务正常工作。",
+        "利用 Zerotier Vpn 隧道与 Nginx 反向代理技术，提供了校外外网对校内内网的访问（内网外入），日均 UV 达 2000 左右，峰值 UV 达 6000 余人次。"
       ]
     }
   ]

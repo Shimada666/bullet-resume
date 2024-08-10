@@ -135,7 +135,7 @@ const eduList: FormattedData[] = formatDataList(data.eduList, {
         </section>
       </header>
       <!--    content -->
-      <section w-full text-left>
+      <section w-full text-left space-y-3>
         <Item :title="data.items.edu" :item-info-list="eduList" />
         <Item :title="data.items.skill" :item-info-list="skillList" />
         <Item :title="data.items.work" :item-info-list="workList" />
