@@ -76,13 +76,13 @@
       ]
     },
     {
-      "project": "投研平台 (业余项目，处于初期开发中)",
+      "project": "金融数据仓库 (业余项目，处于初期开发中)",
       "projectKeywords": [],
-      "projectBrief": "和朋友共建，方便交易员获取数据，寻找因子，易于回测",
+      "projectBrief": "和朋友共建，方便交易员获取数据，寻找因子",
       "projectDesc": [
         "搭建定时任务框架，使用定时任务获取各不同数据源行情数据、基本面信息",
         "使用 Clickhouse 存储百亿级数据",
-        "编写 Python SDK，从 Clickhouse 根据不同条件获取数据并输出为 Dataframe",
+        "编写 Python SDK，从 Clickhouse 根据不同条件获取数据",
         "使用 nfs + autofs 解决多机共享数据源的问题"
       ]
     },
