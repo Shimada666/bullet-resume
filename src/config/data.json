@@ -15,9 +15,8 @@
   "skillList": [
     {
       "skillDesc": [
-        "Web开发：熟悉 Vue2/3 及整体工具链，给 Vue 及相关生态提过一些 Issue 和 PR。有使用 React 的经验。喜好使用业界最新技术。有主导技术选型及构建开发脚手架的经验。熟悉 Springboot，也可用 Python 或 Golang 开发。可全栈独立开发 Web 项目。",
-        "DevOps相关：日常使用 kubernetes，搭建过多个小型 Kubernetes 集群。有搭建使用全流程 DevOps 相关基建的经验。涉及：监控报警、消息通知、日志收集、CICD等。",
-        "操作系统：熟悉 Linux 环境的操作，熟悉环境配置与依赖问题的解决，拥有多个不同 Linux 版本的使用经验，包括 Ubuntu、CentOS 等操作系统及 Proxmox 虚拟化平台的经验。"
+        "Web开发：熟悉 Vue2/3 及整体工具链，有使用 React 的经验。熟悉 Springboot，也可用 Python 或 Golang 开发。能够熟练进行项目的前后端开发。",
+        "运维相关：熟悉 Linux 环境的操作，拥有多个不同 Linux 版本的使用经验，包括 Ubuntu、CentOS 等操作系统及 Proxmox 虚拟化平台的经验。日常使用 kubernetes，当前搭建维护多个小型 Kubernetes 集群。有搭建使用全流程 DevOps 相关基建的经验。涉及：监控报警、消息通知、日志收集、CICD等。"
       ]
     }
   ],
@@ -43,9 +42,8 @@
       "position": "大三实习&全职",
       "workDate": "2020.04 - 至今",
       "workDesc": [
-        "实习入职以来从零搭建 Rocket 主机管理系统，作为项目负责人，负责项目几乎全部的目标制定、日常开发、进度管理和跨部门协调沟通。",
-        "制定团队规范，如前端与后端的规范，技术栈、接口、文件名等规范。",
-        "负责团队日常 Code Review，探索、分享新技术，并在项目中落地。"
+        "入职以来从零搭建 Rocket 主机管理系统，作为项目负责人，负责项目目标制定、日常开发和跨部门协调沟通。",
+        "制定如前端与后端的规范，技术栈。负责日常 Code Review，乐于探索、分享新技术，并在项目中落地。"
       ]
     }
   ],
@@ -53,41 +51,29 @@
     {
       "project": "Rocket 主机管理平台 (公司项目)",
       "projectKeywords": [],
-      "projectBrief": "平台基于 ansible 魔改，负责美团百万级主机运行时变更，包括机器初始化、软件管理、脚本管理、agent 管理、包管理等功能。此外也是美团唯一配置管理平台，联动基础与业务镜像，正在朝不可变基础设施目标演进。",
+      "projectBrief": "平台负责管理美团百万级主机（物理机、虚拟机、容器），包括主机查询模块（运行时信息采集）、与主机变更模块（机器初始化、软件/脚本/agent 管理、包管理等功能）。同时也是美团唯一配置管理平台，联动基础与业务镜像。",
       "projectDesc": [
-        "软件管理：基于魔改 ansible 实现，采用本地执行方式，开发了一套白屏化操作界面，带有版本管理、目标绑定、灰度发布、结果分析等功能，通过底层 one-agent 执行器进行运行时变更。发布功能对标 kubernetes，支持按比例发布及业务内部打散功能，保证发布安全性。另外，软件管理除了页面，也提供丰富的 API，作为底层执行平台供外部业务方调用实现定制功能。",
-        "脚本管理：软件管理的浅包装，提供方便的单次脚本变更/采集数据功能，对于采集数据，支持定时自动采集、自动数据聚合筛选分析。",
-        "agent管理：软件管理的浅包装，除了软件管理基础能力，额外提供各 agent 部署、按业务线运行时自动升级、版本分布采集、生命周期管理等功能。",
+        "主机查询模块：主要基于 osquery，提供给用户数十万机器通过 SQL、自助式无审批的查询体验。用户无需编写复杂的脚本与解析、存储逻辑，而是仅通过编写 SQL 即可自助查询所需主机数据。并在页面或API进行聚合分析导出，此方案解决了用户主机数据查询存储成本过高的问题。在 osquery 无法满足的少数情况上，使用传统的脚本进行数据采集。",
+        "主机变更模块：包含机器初始化、软件/脚本/agent 管理。软件管理底层基于魔改 ansible 实现，使用 golang 重写了 ansible 执行器。页面上开发了一套白屏化操作界面，带有版本管理、目标绑定、灰度发布、结果分析等功能，通过底层 one-agent 执行器进行运行时变更。支持按比例发布及业务内部打散功能，保证发布安全性；脚本管理为软件管理浅包装，提供方便的单次脚本执行/采集数据功能；agent管理也为软件管理浅包装，额外提供各 agent 部署、按业务线运行时自动升级、版本分布采集等功能。",
         "包管理：提供 RPM 包管理能力，包含公司各个 RPM 仓库，串联代码平台与构建平台，保证 RPM 包可溯源，入仓时可审计，平台对包提供入仓、归档、删除等功能，提供包元数据供在线查询。",
-        "镜像联动：配置可与基础/业务镜像联动。通过提供给基础镜像方的客户端工具，可将基础配置自动构入基础镜像，将通用配置运行时安装左移至镜像构建中，减少初始化时间与成功率(66s->1s)。通过提供给构建平台的客户端工具，可将配置作为运行时依赖构入业务镜像中以供业务使用，避免业务运行时再安装影响启动速度。",
+        "镜像联动：配置可与基础/业务镜像联动。通过提供给基础镜像方的客户端工具，可将基础配置自动构入基础镜像，将通用配置运行时安装左移至镜像构建中，减少初始化耗时。通过提供给构建平台的客户端工具，可将配置作为运行时依赖构入业务镜像中以供业务使用，避免业务运行时再安装影响启动速度。",
         "涉及到的技术栈：前端 vue2/3 + vite + ts；后端 springboot；客户端 golang；一些日常脚本：shell/python。"
       ]
     },
     {
-      "project": "OpenDevin (开源项目, 29.2K stars)",
+      "project": "OpenHands（开源项目）",
       "projectKeywords": [],
-      "projectBrief": "OpenDevin 是开源社区发起的模仿 Devin 的项目。是一位自主人工智能软件工程师，能够执行复杂的工程任务，并在软件开发项目上与用户积极协作",
+      "projectBrief": "OpenHands 是开源社区发起的模仿 Devin 的项目。是一位自主人工智能软件工程师，能够执行复杂的工程任务，并在软件开发项目上与用户积极协作",
       "projectDesc": [
-        "提过 31 个 commit, #14 贡献者，在 Slack 上活跃，能够使用英文参与讨论",
-        "实现基于自定义基础镜像的 sandbox 逻辑，让 opendevin 可以运行在任意用户自定义基础镜像",
+        "提过 31 个 commit, 过去在 Slack 上活跃，能够使用英文参与讨论",
+        "实现基于自定义基础镜像的 sandbox 逻辑，让 OpenHands 可以运行在任意用户自定义基础镜像",
         "参与开发维护官方 sandbox 镜像、agentskill 插件，包括插件集成、镜像裁剪等",
         "使用 React，参与部分前端开发",
-        "[项目地址: https://github.com/OpenDevin/OpenDevin](https://github.com/OpenDevin/OpenDevin)"
+        "[项目地址: https://github.com/All-Hands-AI/OpenHands](https://github.com/All-Hands-AI/OpenHands)"
       ]
     },
     {
-      "project": "金融数据仓库 (业余项目，处于初期开发中)",
-      "projectKeywords": [],
-      "projectBrief": "和朋友共建，方便交易员获取数据，寻找因子",
-      "projectDesc": [
-        "搭建定时任务框架，使用定时任务获取各不同数据源行情数据、基本面信息",
-        "使用 Clickhouse 存储百亿级数据",
-        "编写 Python SDK，从 Clickhouse 根据不同条件获取数据",
-        "使用 nfs + autofs 解决多机共享数据源的问题"
-      ]
-    },
-    {
-      "project": "v-code-diff (开源项目, 374 stars)",
+      "project": "v-code-diff (开源项目, 401 stars)",
       "projectKeywords": [],
       "projectBrief": "一个 Vue2 / Vue3 均可用的 code diff 插件",
       "projectDesc": [
@@ -98,26 +84,6 @@
         "丰富且简单易用的 API",
         "较美观的样式，支持暗黑模式",
         "[在线演示地址: https://shimada666.github.io/v-code-diff](https://shimada666.github.io/v-code-diff)"
-      ]
-    },
-    {
-      "project": "super-stream (开源项目, 36 stars)",
-      "projectKeywords": [],
-      "projectBrief": "开源项目，一个 Python 轻量级类 Java Stream 的流式处理库",
-      "projectDesc": [
-        "处理数据时比起内置 map、filter 等高阶函数套娃更好的可读性",
-        "惰性求值（无论中途map，filter多少次，数据最终只计算一次）",
-        "完善的类型提示，即使使用 lambda 也能获取良好的类型提示",
-        "[项目地址: https://github.com/shimada666/super-stream](https://github.com/shimada666/super-stream)"
-      ]
-    },
-    {
-      "project": "校内服务运维",
-      "projectKeywords": [],
-      "projectBrief": "大学在校期间负责校内项目的运维开发工作。",
-      "projectDesc": [
-        "负责重庆邮电大学内网下载站 ， 电影站等。运维期间状态良好 ， 服务正常工作。",
-        "利用 Zerotier Vpn 隧道与 Nginx 反向代理技术，提供了校外外网对校内内网的访问（内网外入），日均 UV 达 2000 左右，峰值 UV 达 6000 余人次。"
       ]
     }
   ]
